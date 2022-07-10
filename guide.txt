@@ -1,1 +1,14 @@
 This is guide to setup infrastuture & configure them.
+as you set up new linux machine
+install git and clone this repository file main.sh
+then provide executable permission to the file by following cmd and run
+This will install java  terraform   awscli  ansible   jenkins
+sudo chmod +x main.sh
+./main.sh
+
+variable store ipv4 from terraform
+cd /etc/ansible/
+create hosts file
+create EC2key.pem = take input from user
+chmod 400 EC2Key.pem
+ansible all -m ping
