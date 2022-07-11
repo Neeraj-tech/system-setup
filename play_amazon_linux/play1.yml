@@ -1,0 +1,23 @@
+---
+# Target section
+- hosts: all
+  become: true
+  become_method: sudo
+
+  #Variable section
+  vars:
+   package1: “httpd”
+   package2: “git”
+   package3: “docker”
+
+  #Task section
+  tasks:
+  - name: "This is the first task"
+    yum: name={{package1}} state=latest
+  - name: “This is the second task”
+    yum: name={{package2}} state=latest
+  - name: “This is the third task”
+    yum: name={{package3}} state=latest
+  - name: “This is the fourth task”
+    yum: name=php
+
