@@ -11,3 +11,11 @@ tags = {
 Name = "Controller"
 }
 }
+output "controller_ip" {
+  value = aws_instance.controller.public_ip
+}
+
+output "controller_zone" {
+  value = aws_instance.controller.availability_zone
+}
+
