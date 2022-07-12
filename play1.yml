@@ -1,0 +1,13 @@
+---
+# Target section
+- hosts: all
+  become: true
+  become_method: sudo
+
+  #Variable section
+  vars:
+  
+  #Task section
+  tasks:
+  - name: "This is the first task of java installtion"
+    command: sudo apt-get install fontconfig openjdk-11-jre -y
