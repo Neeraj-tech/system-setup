@@ -3,6 +3,10 @@ as you set up new linux machine
 install git and clone this repository file main.sh
 then provide executable permission to the file by following cmd and run
 This will install java  terraform   awscli  ansible   jenkins
+mkdir system_setup
+cd system_setup
+git init
+git pull "https://github.com/Neeraj-tech/system-setup.git"
 sudo chmod +x main.sh
 ./main.sh
 
